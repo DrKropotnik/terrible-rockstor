@@ -1,0 +1,40 @@
+{
+    "MollySocket": {
+        "description": "MollySocket allows getting signal notifications via UnifiedPush. It works like a linked device, which doesn't have an encryption key, connected to the Signal server. Everytime it receives an encrypted event, it notifies your mobile via UnifiedPush.",
+        "ui": {
+            "slug": ""
+        },
+        "website": "https://github.com/mollyim/mollysocket",
+        "version": "1.6.0",
+        "containers": {
+            "MollySocket": {
+                "image": "litetex/ghcr.mollyim.mollysocket",
+                "cmd_arguments": [
+                    ["serve", ""]
+                ],
+                "launch_order": 1,
+                "ports": {
+                    "8020": {
+                        "description": "MollySocket server port. Suggested default: 8020",
+                        "host_default": 8020,
+                        "label": "Server port",
+                        "protocol": "tcp",
+                        "ui": true
+                    }
+                },
+                "volumes": {
+                    "/data": {
+                        "description": "Choose a Share for the data cache. Eg: create a Share called mollysocket-data for this purpose.",
+                        "label": "MollySocket Data"
+                    }
+                },
+                "environment": {
+                    "MOLLY_VAPID_PRIVKEY": {
+                        "label": "VAPID key",
+                        "description": "paste output of `docker compose exec mollysocket mollysocket vapid gen` here"
+                    }
+                }
+            }
+        }
+    }
+}
