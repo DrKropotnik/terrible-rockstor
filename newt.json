@@ -9,9 +9,6 @@
         "containers": {
             "Newt": {
                 "image": "fosrl/newt",
-                "cmd_arguments": [
-                    ["serve", ""]
-                ],
                 "launch_order": 1,
                 "environment": {
                     "PANGOLIN_ENDPOINT": {
