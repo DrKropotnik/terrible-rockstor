@@ -16,4 +16,4 @@ Needs a https reverse proxy to work as webserver, since account info is not aske
 
 ## Newt
 
-Seems super simple but doesn't work.
+Super minimal, but it works! To be used with Pangolin Cloud.
