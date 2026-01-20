@@ -8,23 +8,20 @@
         "version": "1.8.1",
         "containers": {
             "Newt": {
-                "image": "fosrl/newt,
+                "image": "fosrl/newt",
                 "cmd_arguments": [
                     ["serve", ""]
                 ],
                 "launch_order": 1,
-                },
                 "environment": {
                     "PANGOLIN_ENDPOINT": {
                         "label": "Endpoint",
                         "description": "https://app.pangolin.net"
                     },
-		    {
                     "NEWT_ID": {
                         "label": "ID",
                         "description": ""
                     },		    
-		    {
                     "NEWT_SECRET": {
                         "label": "Secret",
                         "description": ""
