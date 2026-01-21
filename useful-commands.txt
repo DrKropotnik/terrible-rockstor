@@ -1,0 +1,7 @@
+cd /opt/rockstor/rockons-metastore
+wget https://codeberg.org/xdvd/terrible-rockstor/raw/branch/main/[rock-on].json
+docker exec -u www-data nextcloud-official php occ upgrade
+docker exec -u www-data nextcloud-official php occ files:scan --all
+nano /mnt2/nextcloud-all/config/config.php
+nano /mnt2/ha-config/configuration.yaml
+cd /mnt2/nextcloud-all/data/[user]/files
