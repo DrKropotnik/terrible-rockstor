@@ -50,7 +50,7 @@
                     },
                     "4190": {
                         "description": "Used to manage Sieve scripts remotely. Only keep this port open if your users actively use Sieve for email filtering rules. Suggested default: 104190",
-                        "host_default": 104190,
+                        "host_default": 14190,
                         "label": "ManageSieve"
                     }
                 },
