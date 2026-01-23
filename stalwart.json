@@ -1,13 +1,13 @@
 {
     "Stalwart": {
-        "description": "Stalwart is an open-source mail & collaboration server with JMAP, IMAP4, POP3, SMTP, CalDAV, CardDAV and WebDAV support and a wide range of modern features. It is written in Rust and designed to be secure, fast, robust and scalable.",
+        "description": "<p>Stalwart is an open-source mail & collaboration server with JMAP, IMAP4, POP3, SMTP, CalDAV, CardDAV and WebDAV support and a wide range of modern features. It is written in Rust and designed to be secure, fast, robust and scalable.</p><p>Based on the official docker image: <a href='https://hub.docker.com/r/stalwartlabs/stalwart' target='_blank'>https://hub.docker.com/r/stalwartlabs/stalwart</a>, available for amd64 and arm64 architecture.</p>",
         "ui": {
             "slug": ""
         },
         "website": "https://stalw.art/",
         "version": "0.15.4",
         "containers": {
-            "Newt": {
+            "Stalwart": {
                 "image": "stalwartlabs/stalwart",
                 "launch_order": 1,
                 "ports": {
@@ -52,7 +52,7 @@
                         "description": "Used to manage Sieve scripts remotely. Only keep this port open if your users actively use Sieve for email filtering rules. Suggested default: 4190",
                         "host_default": 4190,
                         "label": "ManageSieve"
-                    },
+                    }
                 },
                 "volumes": {
                     "/opt/stalwart": {
