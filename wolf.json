@@ -21,13 +21,16 @@
         },
         "devices": {
           "/dev/dri": {
-            "description": "GPU device for hardware acceleration."
+            "description": "/dev/dri"
+            "label": "GPU device"
           },
           "/dev/uinput": {
-            "description": "User input device."
+            "description": "/dev/uinput"
+            "label": "User input device"
           },
           "/dev/uhid": {
-            "description": "User HID device."
+            "description": "/dev/uhid"
+            "label": "User HID device."
           }
         }
       }
