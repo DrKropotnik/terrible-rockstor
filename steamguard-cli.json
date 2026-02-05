@@ -1,11 +1,12 @@
 {
     "steamguard-cli": {
-        "description": "A command line utility for setting up and using Steam Mobile Authenticator (AKA Steam 2FA). It can also be used to respond to trade, market, and any other steam mobile confirmations that you would normally get in the app. Use by running <code>docker run -it alcapone1933/steamguard-cli bash</code>",
+        "description": "A command line utility for setting up and using Steam Mobile Authenticator (AKA Steam 2FA). It can also be used to respond to trade, market, and any other steam mobile confirmations that you would normally get in the app. Disable in WebUI and use by running <code>docker run -it alcapone1933/steamguard-cli bash</code>",
         "website": "https://github.com/dyc3/steamguard-cli",
         "version": "0.17.1",
         "containers": {
             "steamguard-cli": {
                 "image": "alcapone1933/steamguard-cli",
+                "launch_order": 1,
                 "volumes": {
                     "/root/.config/steamguard-cli/maFiles/": {
                         "description": "Choose a Share for the data cache. Eg: create a Share called steamguard-cli-data for this purpose.",
