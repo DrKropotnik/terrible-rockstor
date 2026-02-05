@@ -5,7 +5,7 @@
     "website": "https://games-on-whales.github.io/wolf/stable/index.html",
     "containers": {
       "Wolf": {
-        "image": "ghcr.io/games-on-whales/wolf:stable",
+        "image": "ghcr.io/games-on-whales/wolf",
         "tag": "stable",
         "launch_order": 1,
         "opts": [
