@@ -1,11 +1,12 @@
 {
   "Wolf": {
-    "description": "<p>Wolf is an open source streaming server for Moonlight that allows you to share a single server with multiple remote clients in order to play videogames!</p><p>Based on the <a href='https://hub.docker.com/r/gameonwhales/wolf' target='_blank'>official OCI image</a>, available for amd64 architecture only.</p>",
+    "description": "<p>Wolf is an open source streaming server for Moonlight that allows you to share a single server with multiple remote clients in order to play videogames!</p><p>Based on the <a href='ghcr.io/games-on-whales/wolf:stable' target='_blank'>official OCI image</a>, available for amd64 architecture only.</p>",
     "version": "3",
     "website": "https://games-on-whales.github.io/wolf/stable/index.html",
     "containers": {
       "Wolf": {
-        "image": "games-on-whales/wolf",
+        "image": "ghcr.io/games-on-whales/wolf:stable",
+        "tag": "stable",
         "launch_order": 1,
         "opts": [
             [
@@ -21,15 +22,15 @@
         },
         "devices": {
           "/dev/dri": {
-            "description": "/dev/dri"
+            "description": "/dev/dri",
             "label": "GPU device"
           },
           "/dev/uinput": {
-            "description": "/dev/uinput"
+            "description": "/dev/uinput",
             "label": "User input device"
           },
           "/dev/uhid": {
-            "description": "/dev/uhid"
+            "description": "/dev/uhid",
             "label": "User HID device."
           }
         }
